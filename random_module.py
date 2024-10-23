@@ -39,10 +39,14 @@ print(l1)
 s=int(input("enter starting number : "))
 e=int(input("enter ending number : "))
 
-l1 = list(range(s,e))
+l2 = list(range(s,e))
 # print(l2)
-random.shuffle(l1)
-
+random.shuffle(l2)
 print(l1)
+l1[s:e] = l2
+print(l1)
+
 # -------------------- exercise ---------------------------
 
+color = ["red","green","blue","black","red","blue"]
+print(random.sample(color,3))
