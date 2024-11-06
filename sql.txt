@@ -1,0 +1,44 @@
+sql quries
+row - record,entry
+column - field
+
+1) create table
+create table table_name(
+    id int primary key auto increment ,
+    name varchar(50) ,
+    mobile varchar(10),
+    age int 
+);
+
+2) insert - add record into table 
+    -> insert into table_name(name,mobile,age) values('raj patel','1234567890',16)
+
+    ->insert into table_name values('param patel',0987654311,24)
+
+3) update - update data
+
+    ->update table_name set name = new value whrere name=old value
+    update student set name="new name" whrere id = "1"
+
+    ->update table_name set name=new name,age=new age , mobile=new mobile whrere id=2
+
+4) delete - delete record
+
+    -> delete from table_name whrere condition
+    DELETE FROM student WHERE age<=25
+
+5) select - fetch data from table
+
+select all fields and rows
+    -> select * from table_name
+
+select specific fields and rows
+    ->select field_name from table_name whrere condition
+
+    SELECT name,id,mobile FROM student WHERE id>10
+    SELECT name,id,mobile FROM student WHERE id>=5 AND id<=10
+    SELECT * FROM student WHERE age BETWEEN 25 AND 30;
+    SELECT * FROM student WHERE age>25
+    SELECT * FROM student WHERE NOT(age>25 AND age<30)
+    SELECT * FROM student WHERE age NOT BETWEEN 25 AND 30;
+
