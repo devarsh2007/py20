@@ -42,3 +42,21 @@ select specific fields and rows
     SELECT * FROM student WHERE NOT(age>25 AND age<30)
     SELECT * FROM student WHERE age NOT BETWEEN 25 AND 30;
 
+SELECT a record in accending order
+    ->select * from table_name order by field_name
+
+SELECT a record in descending order
+    ->SELECT name,age FROM student ORDER BY name DESC
+
+agreegate function -return only 1 value
+sum
+-> select sum(field_name) from table_name
+SELECT SUM(salary) as 'total salary' FROM employee
+
+avg-> SELECT AVG(salary) as 'average salary' FROM employee
+
+min -> SELECT MIN(age) as 'minimum age' FROM employee
+
+max -> SELECT MAX(age) as 'maximum age' FROM employee
+
+count - >SELECT COUNT(*) as 'total employees' FROM employee
