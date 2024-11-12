@@ -8,8 +8,10 @@ id = int(input("enter id you want to delete : "))
 sql = "delete from employee where id=%s"
 values = [id]
 
+
 mycursor = db.cursor()
 mycursor.execute(sql,values)
 print("row deleted successfully...")
+
 
 db.commit()
