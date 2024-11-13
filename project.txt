@@ -1,0 +1,18 @@
+product managment
+
+1 ) seller view
+-> add product
+-> remove product
+-> update information of product
+-> fetch all products
+
+
+2 ) customer view
+-> fetch available products
+-> buy products
+-> move product to cart
+-> payment
+-> bill in pdf
+
+
+products table
