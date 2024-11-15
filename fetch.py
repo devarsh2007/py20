@@ -17,5 +17,3 @@ mycursor.execute(sql,values)
 
 data = mycursor.fetchone()
 print(data)
-
-    

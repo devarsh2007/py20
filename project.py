@@ -12,7 +12,7 @@ choise = int(input("enter your choise : "))
 
 if choise==1:
     print("----------------- seller view --------------------")
-    
+
     
 elif choise==2:
     print("-------------------- customer view --------------------")
