@@ -16,3 +16,7 @@ product managment
 
 
 products table
+
+customer table
+
+cart table
