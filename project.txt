@@ -12,7 +12,6 @@ product managment
 -> buy products
 -> move product to cart
 -> payment
--> bill in pdf
 
 
 products table
@@ -20,3 +19,5 @@ products table
 customer table
 
 cart table
+
+payment table

@@ -1,0 +1,57 @@
+online bookstore
+---------------------------------------------------------------
+
+Detailed Project Requirements:
+1. Database Design:
+Tables:
+
+Books:
+
+    id (Primary Key, Auto Increment)
+    title (Text, Not Null)
+    author (Text, Not Null)
+    genre (Text)
+    price (Integer, Not Null)
+    stock (Integer, Not Null)
+    rating (Integer, range 0-5)
+Users:
+
+    id (Primary Key, Auto Increment)
+    username (Text, Not Null)
+    password (Text, Not Null)
+    email (Text, Not Null)
+    address (Text)
+
+Orders:
+
+    id (Primary Key, Auto Increment)
+    user_id (from user table)
+    book_id (from books table)
+    quantity (Integer, Not Null)
+    order_date (Date, Not Null)
+    status (Text, e.g., "Pending", "Completed", "Cancelled")
+Cart(optional) :
+
+    id (Primary Key, Auto Increment)
+    user_id (from user table)
+    book_id (from books table)
+    quantity (Integer)
+
+2. Key Features:
+User Module:
+
+    Search books by title, author, genre, or rating.
+    Sort books by price or popularity.
+    View book details, including stock availability.
+
+Cart and Checkout:
+
+    Add books to the cart.
+    Modify cart contents (update quantities or remove items).
+    Checkout and confirm the order.
+
+Admin Panel:
+
+Add, edit, or delete books.
+Update stock and prices.
+View and manage orders.
